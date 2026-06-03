@@ -155,7 +155,7 @@ ul {
 /* Advantages section */
 .advantages-section {
   background-color: var(--color-brand-normal);
-  padding: 16px;
+  padding: 16px 0;
 }
 
 .advantages-list {
