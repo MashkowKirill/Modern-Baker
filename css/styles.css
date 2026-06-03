@@ -282,6 +282,7 @@ ul {
 .carousel-button {
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 44px;
   height: 44px;
   background-color: transparent;
@@ -301,8 +302,6 @@ ul {
   fill: var(--color-primary-light);
 }
 
-.carousel-button:hover .carousel-arrow {
-}
 /* Contact section */
 
 .contact-title {
