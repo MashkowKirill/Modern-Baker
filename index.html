@@ -198,7 +198,7 @@
                 Приєднуйся до мережі пекарень
               </h2>
               <p>Заповни форму, щоб ми звʼязались з тобою!</p>
-              <form name="contact-form" autocomplete="off" novalidate>
+              <form name="contact-form" autocomplete="off">
                 <div class="form-field">
                   <label class="form-label visually-hidden" for="user-name"
                     >Ім’я</label
@@ -322,12 +322,12 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop">
+    <div class="backdrop is-hidden">
       <div class="modal">
         <button class="modal-btn-close" type="button">Close</button>
         <h2>Замовити дзвінок</h2>
         <p>Заповни форму, щоб ми звʼязались з тобою!</p>
-        <form name="modal-form" autocomplete="off" novalidate>
+        <form name="modal-form" autocomplete="off">
           <div class="form-field">
             <label class="form-label visually-hidden" for="user-name"
               >Ім’я</label
@@ -338,6 +338,9 @@
               id="user-name"
               name="user-name"
               placeholder="Ім’я"
+              minlength="2"
+              maxlength="20"
+              required
             />
           </div>
           <div class="form-field">
@@ -350,6 +353,8 @@
               id="user-tel"
               name="user-tel"
               placeholder="Телефон"
+              required
+              pattern="^\+380[0-9]{9}$"
             />
           </div>
           <div class="form-field">
@@ -362,6 +367,7 @@
               id="user-email"
               name="user-email"
               placeholder="Електронна пошта"
+              required
             />
           </div>
           <button class="form-button button" type="submit">
